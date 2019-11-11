@@ -1,0 +1,78 @@
+class Header
+	{
+		gameType 			= 	Coop; 
+		minPlayers 			= 	1; 
+		maxPlayers 			= 	26; 
+	};
+
+joinUnassigned 				= 	1;
+disabledAI 					= 	1;
+
+respawnDialog 				= 	0;
+respawn 					= 	"BASE";
+respawnDelay 				= 	5;
+respawnTemplates[] 			= 	{"MenuPosition"};
+respawnOnStart 				= 	-1;
+
+
+briefing 					= 	-1;
+debriefing 					= 	-1;
+
+showGPS 					= 	1;
+showUAVFeed 				= 	1;
+allowFunctionsRecompile 	= 	1;
+
+
+class CfgSounds
+{
+	sounds[] = {Azan_01,Money_01,Hostages_01,Bedrood_01};
+	class 01
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "Azan_01";
+
+		// filename, volume, pitch, distance (optional)
+		sound[] = { "scripts\sounds\Azan.ogg", 5 db+8, 1, 300 };
+
+		// subtitle delay in seconds, subtitle text
+		titles[] = { 1, "*call to prayer*" };
+	};
+
+	class 02
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "Money_01";
+
+		// filename, volume, pitch, distance (optional)
+		sound[] = { "scripts\sounds\Money.ogg", 5, 1, 200 };
+
+		// subtitle delay in seconds, subtitle text
+		titles[] = { 1, "*Hello American! You bring me much money, yes?*" };
+	}
+
+
+	class 03
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "Hostages_01";
+
+		// filename, volume, pitch, distance (optional)
+		sound[] = { "scripts\sounds\Hostages.ogg", 5, 1, 200 };
+
+		// subtitle delay in seconds, subtitle text
+		titles[] = { 1, "*I see you noticed my friends, they fucking think they can steal from me...*" };
+	}
+
+	class 04
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "Bedrood_01";
+
+		// filename, volume, pitch, distance (optional)
+		sound[] = { "scripts\sounds\Bedrood.ogg", 5, 1, 200 };
+
+		// subtitle delay in seconds, subtitle text
+		titles[] = { 1, "*You may take the guns now, a pleasure doing business. Bedrood.*" };
+	}
+
+};
